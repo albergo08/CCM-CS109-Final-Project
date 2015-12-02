@@ -22,6 +22,12 @@ user_id:
 
     - the user who listed the item. 
     - example: "basbalmom27"
+
+
+n_sold: 
+
+    - How many items they've sold in the past. Comes from FeedbackScore item in GetUserProfile.
+    - example: "FeedbackScore: 140"
         
 
 Feedback rating and each subcolumn
