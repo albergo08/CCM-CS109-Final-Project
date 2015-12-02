@@ -24,21 +24,6 @@ user_id:
     - example: "basbalmom27"
 
 
-n_sold: 
-
-    - How many items they've sold in the past. Comes from FeedbackScore item in GetUserProfile.
-    - example: "FeedbackScore: 140"
-        
-
-Feedback rating and each subcolumn
-
-    - these come from AverageRatingDetails in GetUserProfile in Shopping API
-        - Item as described    
-        - Communication
-        - Shipping time
-        - Shipping and handling charges
-
-
 cost_ship:
     
     - the cost charged to the buyer for shipping, retrieved from Finding API
