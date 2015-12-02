@@ -14,30 +14,14 @@ We want a dataframe of 10,000 users, and the auctions that they have made. All t
 
 item_id: 
 
-    - the id associated with the item being auctioned/sold. 
+    - the auction itemID. 
     - example: "121829321531"
+    - inside searchResults under item
 
 user_id:
 
-    - the user who listed the item. e
+    - the user who listed the item. 
     - example: "basbalmom27"
-
-	 - each subcolumn: Item as described, Communication, Shipping time, shipping and handling charges
-what portion of their feedback is as buyer and as seller
-=======
-n_sold: 
-
-    - How many items they've sold in the past. Comes from FeedbackScore item in GetUserProfile.
-    - example: "FeedbackScore: 140"
-        
-
-Feedback rating and each subcolumn
-
-    - these come from AverageRatingDetails in GetUserProfile in Shopping API
-        - Item as described    
-        - Communication
-        - Shipping time
-        - Shipping and handling charges
 
 
 cost_ship:
@@ -91,6 +75,129 @@ conditionId:
 topRatedListing:
 
     - is it a top rating? boolean
+
+
+
+
+**Things that we can get from getSingleItem Shopping API call:**
+
+Get itemID again:
+
+    - inside Item
+    - this is to add on to existing Finding API data
+
+EndTime:
+
+    - returns time the bid ends
+    - inside Item
+
+StartTime:
+
+    - returns start time of bid. Can be used with EndTIme to calculate Auction duration
+    - inside Item
+
+ListingType:
+
+    - Returns type of listing.
+    - example: "FixedPriceItem"
+    - inside Item
+
+Location:
+
+    - Returns string location in form City, State (in US)
+    - inside Item
+
+PictureURL_count:
+
+    - PictureURL inside Item. we want the len of PictureURL array
+
+PostalCode:
+
+    - returns string of numbers
+    - inside Items
+
+UserID:
+
+    - inside Seller which is inside Item
+    - example: "my-ohnogto"
+
+BidCount:
+
+    - number of bids placed on item
+    - inside Items
+
+FinalPrice:
+    
+    - the CurrentPrice value for completed auctions
+    - we want Value inside Current Price, which is inside Items
+
+ShipToLocations_count:
+
+    - How many states/countries will seller ship to. 
+    - take count of ShipToLocations in Items
+
+ReturnPolicy:
+
+    - gives string "ReturnsNotAccepted" or "ReturnsAccepted". Convert to bool
+    - inside Items
+
+ProductID:
+
+    - gives ID for type of product being auctioned in terms of some string of numbers. Idk what we will use for yet
+    - get Value inside ProductID, which is inside items
+
+
+handlingTime:
+
+    - gives int 1,2,3,4,etc which indicates how many days of handling the seller will take to ship
+    - inside Items
+
+GlobalShipping:
+
+    - bool that says whether they'll ship out of US or not.
+    - inside Items
+
+
+
+
+
+**Shopping API for User data per UserID**
+
+FeedbackScore: 
+
+    - How many items the user has had positive interactions with. Comes from FeedbackScore item in GetUserProfile.
+    - example: "FeedbackScore: 140"
+    - IF we wanted to improve on our model as a separator for just sellers, we would find a way to get Selling only feedback score. Currently, Feedback score is an aggregate of feedback as a buyer and as a seller. It's an important number even if we don't do that, still.'
+
+SellerBusinessType:
+
+    - returns string like "Undefined" or "Commercial" or "Private"
+    - inside User
+
+ItemAsDescribed:
+
+    - returns average rating for how accurate the seller described the item
+    - Is Rating for the RatingDetal:"ItemAsDescribed" inside AverageRatingDetails inside FeedbackHistory
+
+Communication:
+
+    - returns average rating for seller's communication
+    - Is Rating for the RatingDetal: "Communication" inside AverageRatingDetails inside FeedbackHistory
+
+ShippingTime:
+
+    - returns average rating for how quick the seller shipped
+    - Is Rating for the RatingDetal: "ShippingTime" inside AverageRatingDetails inside FeedbackHistory
+
+
+S&H_Charges:
+
+    - returns average rating for how reasonable seller's' shipping costs were
+    - Is Rating for the RatingDetal: "ShippingAndHandlingCharges" inside AverageRatingDetails inside FeedbackHistory
+
+
+
+
 
 
 
