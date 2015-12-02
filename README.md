@@ -20,7 +20,7 @@ How many items they've sold
 
 Feedback rating
 
-	 - each subcolumn: Iteam as described, Communication, Shipping time, shipping and handling charges
+	 - each subcolumn: Item as described, Communication, Shipping time, shipping and handling charges
 what portion of their feedback is as buyer and as seller
 
 shipping prices
