@@ -7,7 +7,7 @@ Shopping API - This will give us access to user data and public item
 
 Finding API - This will give us access to auction data
 
-We want a dataframe of 10,000 users, and the auctions that they have made. All these auctions will have already ended. We will only look at electronics, and perhaps just certain electronics, to not worry about varying price ranges. We filter by items sold in US only. We will write a weighting function that takes into account increase from starting bid on sell and comparison to average final price for that item. 
+We want a dataframe of 10,000 users, and the auctions that they have made. All these auctions will have already ended. We will only look at 32gb iPhone 5s's to not worry about varying price ranges. We filter by items sold in US only. We will write a weighting function that takes into account increase from starting bid on sell and comparison to average final price for that item. 
 
 
 **What columns we want:**
