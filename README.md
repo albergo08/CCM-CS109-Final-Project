@@ -2,11 +2,9 @@
 
 ##Curren Iyer, Charles Zhang, and Michael Albergo
 
-<<<<<<< HEAD
 URL for WEBSITE http://zcharles333.github.io/CCM-CS109-Final-Project/
 URL for SCREENCAST https://www.dropbox.com/sh/aganwbvee19i90x/AABCbTsj4Xbqo0d4BZjHCD4Fa?dl=0
-=======
->>>>>>> 9815b2396511680712de3cad91fedf9820e9b1e1
+
 
 ### We have 4 project notebooks: 
 
