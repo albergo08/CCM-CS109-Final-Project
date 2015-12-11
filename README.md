@@ -1,6 +1,8 @@
 # CCM-CS109-Final-Project
 Made by Michael Albergo, Curren Iyer, Charles Zhang
 
+PLEASE START IN THE data/get_data.ipynb NOTEBOOK AND FOLLOW DIRECTIONS FROM THERE
+
 These are the APIs we will be using from Ebay:
 
 Shopping API - This will give us access to user data and public item
