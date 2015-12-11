@@ -2,6 +2,7 @@
 
 ##Curren Iyer, Charles Zhang, and Michael Albergo
 
+
 ### We have 4 project notebooks: 
 
 ####get__data.ipynb which is in the data folder, which makes API calls and retrieved the data
