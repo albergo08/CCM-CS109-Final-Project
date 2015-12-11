@@ -35,7 +35,7 @@
 <h4>
 <a id="data-gathering-and-cleaning" class="anchor" href="#data-gathering-and-cleaning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Gathering and Cleaning</h4>
 
-<p>Using eBay's API, we gathered data on completed auctions and the auction's seller's profile information. eBay has a huge database, so we specified that the only auctions we were going to focus on were ones that were selling iPhone 5s phones with 32GB. We also made sure to clean our data to only get values that we thought were useful. For example, information about the different bidders wasn't relevant information to us, because from a seller's perspective, they would have no control over the types of bidders that bid on their auction. </p>
+<p>Using eBay's API, we gathered data on completed auctions and the auction's seller's profile information. eBay has a huge database, so we specified that the only auctions we were going to focus on were ones that were selling iPhone 5s phones with 32GB. We didn't have to worry about prices changing with different time periods, because grabbing data from eBay is limited to the most recent data, so the prices are all about the same. We also made sure to clean our data to only get values that we thought were useful. For example, information about the different bidders wasn't relevant information to us, because from a seller's perspective, they would have no control over the types of bidders that bid on their auction. </p>
 
 <h4>
 <a id="data-analysis" class="anchor" href="#data-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Analysis</h4>
@@ -58,9 +58,9 @@
 <h4>
 <a id="predictions" class="anchor" href="#predictions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Predictions</h4>
 
-<p>For our predictions, we move to a different problem, of whether selling on eBay would be more profitable than selling elsewhere. </p>
+<p>For our predictions, we move to a different problem, of whether selling on eBay would be more profitable than selling elsewhere. To make these predictions, we first created a cost matrix, keeping in mind the cost to list an eBay auction and the average price of selling an iPhone 5s outside of eBay. We create SVM classifiers and try to improve them with feature selection, and also compare with regressions such as logistic with lasso to determine which performs the best.  </p>
 
-<p>The x-axis on this plot tells us what expected profit would be at each probability of selling your iPhone 5s 32gb on eBay. We see that at around 75% probability of selling eBay, maximum predicted profit can occur, at a value of around $70. Moreover, everywhere above a probability around 13% results in a predicted positive profit, and at 100% probability of selling on eBay, a large profit (about 60% of the max) is expected to be received. Seems pretty sensible to list it on eBay, then! That dip starting at around 75% probability comes from opportunity costs and listing costs.</p>
+<p>The graph below is a profit curve for that shows that the logistic with lasso does the best in the end. The x-axis on this plot tells us what expected profit would be at each probability of selling your iPhone 5s 32gb on eBay. We see that at around 75% probability of selling eBay, maximum predicted profit can occur, at a value of around $70. Moreover, everywhere above a probability around 13% results in a predicted positive profit, and at 100% probability of selling on eBay, a large profit (about 60% of the max) is expected to be received. Seems pretty sensible to list it on eBay, then! That dip starting at around 75% probability comes from opportunity costs and listing costs.</p>
 
 <p><img src="images/final.png" alt="final"></p>
 
