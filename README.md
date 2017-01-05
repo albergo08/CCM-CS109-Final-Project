@@ -1,6 +1,6 @@
 #Examining eBay's Utility
 
-##Curren Iyer, Charles Zhang, and Michael Albergo
+##Michael Albergo, Curren Iyer, and Charles Zhang
 
 URL for WEBSITE http://zcharles333.github.io/CCM-CS109-Final-Project/
 URL for SCREENCAST https://www.dropbox.com/sh/aganwbvee19i90x/AABCbTsj4Xbqo0d4BZjHCD4Fa?dl=0
